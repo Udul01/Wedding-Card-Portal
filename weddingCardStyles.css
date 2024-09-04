@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/*@font-face {*/
+/*    font-family: "Krylon-Regular.otf";*/
+/*    src: url("./fonts/Krylon-Regular.otf");*/
+/*}*/
+
+@font-face {
+    font-family: "MelindaEvania.otf";
+    src: url("./fonts/MelindaEvania.otf");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "TenorSans-Regular.ttf";
+    src: url("./fonts/TenorSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal
+}
+
+
+:root {
+    --font-primary: "MelindaEvania.otf", serif;
+    --font-secondary: var(var(--font-secondary))
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000 !important;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a,
+ul,
+ol,
+li,
+input,
+select,
+textarea,
+table {
+    font-family: var(--font-primary) !important;
+}
+
+.card-area {
+    width: 430px;
+    height: 100vh;
+}
+
+.backgroundImage {
+    position: absolute;
+    z-index: 1 !important;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-content {
+    z-index: 9 !important;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.welcomeCoupleImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: solid 2px #fff !important;
+}
+
+.title-style-1 {
+    font-size: 33px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.title-style-2 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.title-style-3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.title-style-4 {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.title-style-5 {
+    font-size: 17px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.title-style-6 {
+    font-size: 31px;
+    color: #065308;
+    font-family: var(--font-secondary) !important;
+}
+
+.title-style-7 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.title-style-8 {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.welcome-content button {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.welcomeButton{
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.overlay {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9999999999999999) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.swipe-up-link {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbarBottom {
+    background-color: #fff;
+}
+
+.navbarBottom a {
+    background-color: #fff;
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navbarBottom a i {
+    font-size: 15px;
+}
+
+.navbarBottom a img {
+    width: 20px;
+    height: auto;
+}
+
+.navbarBottom a:hover,
+.activeBtn a {
+    background-color: #065308;
+    color: #fff;
+}
+
+.mapIframe {
+    border-radius: 10px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.4));
+}
+
+.mapButton {
+    font-size: 13px;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 9px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    align-self: center;
+    border: none;
+    outline: none;
+}
+
+.scroll-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Style the scrollbar */
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+    /* This will hide the scrollbar */
+}
+
+/* Optional: Style the track and thumb of the scrollbar */
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.dateStyle {
+    color: #000;
+    padding: 10px;
+    border: solid 3px #707070;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 60px;
+    background-color: #fff;
+}
+
+.countDownBox {
+    border-radius: 7px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.44));
+    background-color: #ffffff;
+    margin: 5px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card-area {
+        width: 100vw !important;
+        height: 100vh;
+    }
+  }
